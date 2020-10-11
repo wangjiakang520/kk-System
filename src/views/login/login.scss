@@ -1,0 +1,53 @@
+$bg:#4373a5;
+$dark_gray:hsl(201, 13%, 59%);
+$light_gray:#000000;
+
+.login-container {
+  min-height: 100%;
+  width: 100%;
+  background-color: $bg;
+  display: flex;
+  align-items: center;
+
+ .login-form {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin:0px auto;
+    width: 350px;
+    padding: 20px 35px 35px 15px;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 0 25px #cac6c6;
+  }
+
+
+  .svg-container {
+    padding: 6px 5px 6px 15px;
+    color: $dark_gray;
+    vertical-align: middle;
+    width: 30px;
+    display: inline-block;
+  }
+
+  .title-container {
+    position: relative;
+
+    .title {
+      font-size: 26px;
+      color: $light_gray;
+      margin: -50px auto 30px auto;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+
+  .show-pwd {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 16px;
+    color: $dark_gray;
+    cursor: pointer;
+    user-select: none;
+  }
+}
